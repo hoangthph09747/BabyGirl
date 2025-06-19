@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6c53052e3cc9f7942be4ba5445aa9253
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 26286
+  packageName: Paint in 3D
+  packageVersion: 3.0.2
+  assetPath: Assets/Plugins/CW/Shared/Common/Extras/Scripts/CwRenderTextureManager.cs
+  uploadId: 595998
