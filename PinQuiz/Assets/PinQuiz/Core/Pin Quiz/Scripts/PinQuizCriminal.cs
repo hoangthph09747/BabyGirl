@@ -145,7 +145,7 @@ namespace PinQuiz
                 coinMove.SetDelay(Vector2.Distance(coin.transform.position, _transform.position) * delayCoin);
                 coinMove.Append(coin.transform.DOMove(peakPoint, Vector2.Distance(peakPoint, coin.transform.position) / coinSpeed).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    SoundManager_BabyGirl.Instance.PlayOneShot($"Sounds/unlock");
+                    SoundManager_BabyGirl.Instance.PlayOneShot("unlock");
                     coin.FadeRenderer(0, Vector2.Distance(_transform.position, coin.transform.position) / coinSpeed);
                     Vector3 pos = new Vector3(_transform.position.x + Random.Range(-1.1f, 1.1f), _transform.position.y + Random.Range(0.1f, 3.0f), _transform.position.z);
                     PinQuizManager.instance.ShowEff(1.75f, pos, PinQuizManager.TypeEff.CoinCollect);
@@ -198,7 +198,7 @@ namespace PinQuiz
             bool CheckEntity()
             {
                 var hits = Physics2D.RaycastAll(point, dir, 100, ~treasureLayermask);
-                print("Hits count = " + hits.Length);
+               // print("Hits count = " + hits.Length);
                 foreach (var hit in hits)
                 {
                     if (hit.transform.TryGetComponent(out PinQuizEntity e))
@@ -296,13 +296,15 @@ namespace PinQuiz
 
         private void AttackPlayer(PinQuizPrincess princess)
         {
-            Manager.instance.soundManager.PlayOneShot(barkSound);
+            // Manager.instance.soundManager.PlayOneShot(barkSound);
+            
+            SoundManager_BabyGirl.Instance.PlayOneShot(barkSound);
             moveTween?.Kill();
             physicMoveDir = Vector2.zero;
-            var smoke = Instantiate(attackSmoke);
-            smoke.transform.SetParent(princess.transform, false);
-            smoke.transform.localPosition = Vector3.zero;
-            smoke.Play();
+            //var smoke = Instantiate(attackSmoke);
+            attackSmoke.transform.SetParent(princess.transform, false);
+            attackSmoke.transform.localPosition = Vector3.zero;
+            attackSmoke.Play();
             princess.PlayScareAnim();
             PlayAttackAnimtion();
             this.DelayFunction(1, () =>
@@ -339,8 +341,8 @@ namespace PinQuiz
             canCheck = false;
             canFall = false;
 
-            Manager.instance.soundManager.PlayOneShot(crySound);
-
+           // Manager.instance.soundManager.PlayOneShot(crySound);
+            SoundManager_BabyGirl.Instance.PlayOneShot(crySound);
             transform.DOMoveY(transform.position.y + 10, 2);
             transform.DORotate(new Vector3(0, 0, 720), 2, RotateMode.LocalAxisAdd);
             DOVirtual.Color(Color.white, new Color(1, 1, 1, 0), 1, color =>

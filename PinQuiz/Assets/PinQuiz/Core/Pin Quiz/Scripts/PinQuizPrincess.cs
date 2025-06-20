@@ -143,7 +143,7 @@ namespace PinQuiz
             else
                 PlayIdleAnim();
 #if UNITY_EDITOR
-            Debug.Log("Fall Distance" + fallHitObj.distance);
+          //  Debug.Log("Fall Distance" + fallHitObj.distance);
 #endif
         }
 
@@ -196,7 +196,7 @@ namespace PinQuiz
 
         private void PlayWinAnimation()
         {
-            SoundManager_BabyGirl.Instance.PlayOneShot("Sounds/success1");
+            SoundManager_BabyGirl.Instance.PlayOneShot("success1");
             Vector3 pos = new Vector3(anim.transform.position.x, anim.transform.position.y + 1, anim.transform.position.z);
             PinQuizManager.instance.ShowEff(3, pos, PinQuizManager.TypeEff.ChangeSkinPrincessWin);
             //GameObject effect = Instantiate(PinQuizManager.instance.effectChangeSkinPrincessWin);
@@ -313,9 +313,10 @@ namespace PinQuiz
                 PlayIdleAnim();
                 this.PostEvent(EventID.OnWinPinQuizPrincess, gameObject);
 
+                SoundManager_BabyGirl.Instance.PlayOneShot("CollectCoin");
                 //CoinManager.instance.GetListCoin();
                 //CoinManager.instance.MoveTo(transform);
-                Invoke(nameof(PlayWinAnimation), 1);
+                Invoke(nameof(PlayWinAnimation),2f);
                 Invoke(nameof(Win), 3.5f);
             }
         }
@@ -376,7 +377,7 @@ namespace PinQuiz
                 PinQuizManager.instance.LoseGame(EndGameType.CoinStuck);
                 canLoseForTreasureStuck = false;
                 PlayCoinStuckAnim();
-                SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+               // SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
             }
         }
 
@@ -417,7 +418,7 @@ namespace PinQuiz
             moveTween?.Kill();
             anim.PlayAnimation(slimeTouchTreasure, true, 0.5f);
             PinQuizManager.instance.LoseGame(EndGameType.CoinStuck);
-            SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+           // SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
         }
 
         public override void BeingExplosed(PinQuizTNT bomb)
@@ -425,7 +426,7 @@ namespace PinQuiz
             if (endGame) return;
             endGame = true;
             anim.PlaySequanceAnimations(exploseAnim[0], exploseAnim[1]);
-            SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+           //SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
             PinQuizManager.instance.LoseGame(Random.Range(0, 2) == 0 ? EndGameType.Bomb2 : EndGameType.Bomb);
         }
 
@@ -445,7 +446,7 @@ namespace PinQuiz
             moveTween?.Kill();
             anim.PlayAnimation(touchLavaAnim, true, 0.1f);
             PinQuizManager.instance.LoseGame(EndGameType.Fire);
-            SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+           // SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
             fireAnim.gameObject.SetActive(true);
             fireAnim.Play();
             base.TouchLava(lava);
@@ -458,7 +459,7 @@ namespace PinQuiz
             moveTween?.Kill();
             PlayCoinStuckAnim();
             PinQuizManager.instance.LoseGame(dog.transform, EndGameType.MonsterGetCoins, 5);
-            SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+           // SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
         }
 
         public void Dream()

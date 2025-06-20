@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace HongQuan
 {
-    [RequireComponent(typeof(Button)), RequireComponent(typeof(ExtendedAnimation.UIAnimationButton))]
+    //[RequireComponent(typeof(Button)), RequireComponent(typeof(ExtendedAnimation.UIAnimationButton))]
     public class ButtonExit : MonoBehaviour
     {
         public UnityEvent onStay;

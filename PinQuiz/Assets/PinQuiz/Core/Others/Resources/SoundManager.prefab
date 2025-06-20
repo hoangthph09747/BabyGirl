@@ -24,6 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251049148182976054}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.59440583, y: 0.05537346, z: 5.3685064}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,7 +33,6 @@ Transform:
   - {fileID: 7205432496106371503}
   - {fileID: 79967040178823056}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9057289241536241909
 MonoBehaviour:
@@ -48,6 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgSource: {fileID: 7154116954841678288}
   fxSource: {fileID: 2047749826950845895}
+  SoundArr:
+  - name: itemClick
+    audioClip: {fileID: 8300000, guid: 0dc34370192fceb4194af792f651c84e, type: 3}
+  - name: Children Yay
+    audioClip: {fileID: 8300000, guid: 93fa5c46d2cc2a546bf9deea560995a5, type: 3}
+  - name: CollectCoin
+    audioClip: {fileID: 8300000, guid: a3bbfbebe45040d4195013f59292b3bc, type: 3}
 --- !u!1 &6132540244123129681
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,13 +79,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6132540244123129681}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8667743822113448575}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &7154116954841678288
 AudioSource:
@@ -200,13 +207,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8486684937856597345}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8667743822113448575}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2047749826950845895
 AudioSource:

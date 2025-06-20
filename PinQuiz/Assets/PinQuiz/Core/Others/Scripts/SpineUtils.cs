@@ -36,7 +36,7 @@ namespace QuanUtilities
         }
 
         public static void ReinitializeComponent(SkeletonRenderer component)
-        {
+        {/*
             if (component == null) return;
             if (!SkeletonDataAssetIsValid(component.SkeletonDataAsset)) return;
             var stateComponent = component as IAnimationStateComponent;
@@ -53,7 +53,7 @@ namespace QuanUtilities
                 stateComponent.AnimationState.AssignEventSubscribersFrom(oldAnimationState);
             }
 
-            component.LateUpdate();
+            component.LateUpdate();*/
         }
 
         public static void ReinitializeComponent(SkeletonGraphic component)

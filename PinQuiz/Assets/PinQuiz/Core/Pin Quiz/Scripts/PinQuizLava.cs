@@ -2,7 +2,7 @@ using HongQuan;
 using PinQuiz;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+//using Unity.VisualScripting;
 using UnityEngine;
 
 namespace PinQuiz
@@ -28,9 +28,9 @@ namespace PinQuiz
         {
             if (!col.transform.TryGetComponent(out PinQuizEntity entity)) return;
             if (entity.EntityType == EntityType.Lava) return;
-            var eff = QuanUtilities.SimplePool.Spawn(PinQuizManager.instance.lavaSteamEffect, transform.position, Quaternion.identity);
+           /* var eff = QuanUtilities.SimplePool.Spawn(PinQuizManager.instance.lavaSteamEffect, transform.position, Quaternion.identity);
             eff.DespawnDelay(1);
-            eff.effect.Play();
+            eff.effect.Play();*/
             SoundManager_BabyGirl.Instance.PlaySoundEffectOneShot(PinQuizManager.instance.lavaEvaporationSound);
             entity.TouchLava(this);
         }

@@ -26,7 +26,7 @@ namespace PinQuiz
 
         [Header("Lava")]
         [SerializeField] public GameObject lavaStone;
-        [SerializeField] public ParticleEffect lavaSteamEffect;
+       // [SerializeField] public ParticleEffect lavaSteamEffect;
         [SerializeField] public AudioClip lavaEvaporationSound;
 
         [Header("LayerMasks")]
@@ -119,9 +119,9 @@ namespace PinQuiz
             instance = null;
 
     
-            Resources.UnloadUnusedAssets();
-            System.GC.WaitForPendingFinalizers();
-            System.GC.Collect();
+            //Resources.UnloadUnusedAssets();
+            /*System.GC.WaitForPendingFinalizers();
+            System.GC.Collect();*/
         }
 
         private void Start()
@@ -283,7 +283,7 @@ namespace PinQuiz
         public void SetRemovePins(bool canRemove)
         {
             Pin.canRemove = canRemove;
-            Debug.Log("Set remove pin " + canRemove);
+            //Debug.Log("Set remove pin " + canRemove);
         }
 
         public int canRemovePin = 0;

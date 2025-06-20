@@ -43,7 +43,7 @@ namespace PinQuiz
 
             this.DelayFunction(mainAnim.GetAnimationDuration(dreamOn), () =>
             {
-                SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/girl laugh");
+                //SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/girl laugh");
                 richDream.TurnOn();
                 //this.DelayFunction(3, () => richDream.TurnOff(WakeupToReality));
                 this.DelayFunction(3, () =>
@@ -62,12 +62,12 @@ namespace PinQuiz
 
         private void WakeupToReality()
         {
-            SoundManager_BabyGirl.Instance.PlayOneShot("IceCreamSounds/Pop");
+            //SoundManager_BabyGirl.Instance.PlayOneShot("IceCreamSounds/Pop");
             mainAnim.PlayAnimation(wakeup, false, 0.2f);
             this.DelayFunction(mainAnim.GetAnimationDuration(wakeup), () =>
             {
                 mainAnim.PlayAnimation(reality, true, 0.5f);
-                SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
+               // SoundManager_BabyGirl.Instance.PlayOneShot("FishingSounds/Sob");
                 this.DelayFunction(mainAnim.GetAnimationDuration(reality) * 3, () =>
                 {
                     mainAnim.PlayAnimation(idle, true, .5f);

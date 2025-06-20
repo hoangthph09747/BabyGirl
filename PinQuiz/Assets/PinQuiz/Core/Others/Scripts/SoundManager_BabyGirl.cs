@@ -6,13 +6,19 @@ public class SoundManager_BabyGirl : MonoBehaviour
 {
     public static SoundManager_BabyGirl _instance;
     public AudioSource bgSource, fxSource;
-
+    public Sound[] SoundArr;
+    [System.Serializable]
+    public class Sound
+    {
+        public string name;
+        public AudioClip audioClip;
+    }
     public static SoundManager_BabyGirl Instance
     {
         get
         {
             // Nếu chưa có thể hiện, hãy tạo một thể hiện mới
-            if (_instance == null)
+           /* if (_instance == null)
             {
                 _instance = FindObjectOfType<SoundManager_BabyGirl>();
 
@@ -22,7 +28,7 @@ public class SoundManager_BabyGirl : MonoBehaviour
                     GameObject singletonObject = Instantiate(Resources.Load<GameObject>("SoundManager"));
                     _instance = singletonObject.GetComponent<SoundManager_BabyGirl>();
                 }
-            }
+            }*/
 
             // Trả về thể hiện duy nhất của class
             return _instance;
@@ -56,25 +62,51 @@ public class SoundManager_BabyGirl : MonoBehaviour
     /// hàm chạy một âm đơn
     /// </summary>
     /// <param name="pathAudioClip"> đường dẫn tới file âm thanh trong thư mục resources của bạn</param>
-    public void PlayOneShot(string pathAudioClip)
+    public void PlayOneShot(string nameClip)
     {
-
-        if (Resources.Load<AudioClip>(pathAudioClip))
+        //Debug.Log("Play sound " + nameClip);
+      /*  if (Resources.Load<AudioClip>(pathAudioClip))
         {
             fxSource.PlayOneShot(Resources.Load<AudioClip>(pathAudioClip));
         }
         else
         {
             Debug.LogError("null: " + pathAudioClip);
+        }*/
+        
+        foreach (var item in SoundArr)
+        {
+            if (nameClip.Contains(item.name))
+            {
+                fxSource.clip = item.audioClip;
+                break;
+            }
         }
-
+        fxSource.Play();
     }
-
-    public void PlayOneShotLong(string pathAudioClip)
+   /* public void StopAllSound()
+    {
+        if (fxSource.isPlaying)
+        {
+            fxSource.Stop();
+        }
+    }*/
+    public void PlayOneShotPath(string pathAudioClip)
+    {
+          if (Resources.Load<AudioClip>(pathAudioClip))
+          {
+              fxSource.PlayOneShot(Resources.Load<AudioClip>(pathAudioClip));
+          }
+          else
+          {
+              Debug.LogError("null: " + pathAudioClip);
+          }
+    }
+    public void PlayOneShotLong(string name)
     {
 
         fxSource.Stop();
-        if (Resources.Load<AudioClip>(pathAudioClip))
+        /*if (Resources.Load<AudioClip>(pathAudioClip))
         {
             fxSource.clip = (Resources.Load<AudioClip>(pathAudioClip));
             fxSource.Play();
@@ -82,8 +114,16 @@ public class SoundManager_BabyGirl : MonoBehaviour
         else
         {
             Debug.LogError("null: " + pathAudioClip);
+        }*/
+        foreach (var item in SoundArr)
+        {
+            if (name.Contains(item.name))
+            {
+                fxSource.clip = item.audioClip;
+                fxSource.Play();
+                break;
+            }
         }
-
     }
 
     public void PlayOneShotLong(AudioClip audioClip)

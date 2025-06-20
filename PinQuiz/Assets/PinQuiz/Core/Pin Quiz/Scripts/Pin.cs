@@ -2,7 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 using HongQuan;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -24,7 +24,7 @@ namespace PinQuiz
         [SerializeField] private Transform[] mainRender;
         [SerializeField] private Transform[] outlineRender;
         [SerializeField] private GameObject outLine;
-        [SerializeField] TMP_Text numberText;
+        //[SerializeField] TMP_Text numberText;
         [SerializeField] private SpriteRenderer[] rens;
 
         [SerializeField] private Transform keyBodyColRenderer;
@@ -56,13 +56,13 @@ namespace PinQuiz
 
         private void TurnOnNumber()
         {
-            numberText.gameObject.SetActive(true);
+           /* numberText.gameObject.SetActive(true);
             numberText.transform.rotation = Quaternion.identity;
-            numberText.text = number.ToString();
+            numberText.text = number.ToString();*/
         }
 
         public void RemovePin()
-        {
+        {  //Debug.Log("Remove Pin 65");
             if (!canRemove)
             {
                 CantRemovePinAnimation();
@@ -74,13 +74,14 @@ namespace PinQuiz
                     CantRemovePinAnimation();
                     return;
                 }
-
+           // Debug.Log("Remove Pin 77");
             isRemoved = true;
 
             GetComponent<ObjectOnlyClick>().canClick = false;
+           // Debug.Log("Remove Pin 81");
             transform.DOMove(transform.position + transform.right * removeDistance, 1);
-
-            SoundManager_BabyGirl.Instance.PlayOneShot("Sounds/Effects/Shopping/itemClick");
+           // Debug.Log("Remove Pin 83");
+            SoundManager_BabyGirl.Instance.PlayOneShot("itemClick");
 
             //Fading
             if (TryGetComponent(out SpriteRenderer baseRen))
@@ -101,7 +102,7 @@ namespace PinQuiz
             foreach (var r in rens)
                 if (r != null)
                     r.transform.DOShakePosition(.5f, .1f, 50, 90, false, true);
-            SoundManager_BabyGirl.Instance.PlayOneShot("SoundSpotIt/touchFail");
+        //    SoundManager_BabyGirl.Instance.PlayOneShot("SoundSpotIt/touchFail");
         }
 
         private void AdjustTouchCollider()

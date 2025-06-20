@@ -23,7 +23,7 @@ namespace PinQuiz
 
         private void OnDestroy()
         {
-            this.RemoveListener(EventID.OnWinPinQuizPrincess, _OnWin);
+           this.RemoveListener(EventID.OnWinPinQuizPrincess, _OnWin);
             _OnWin = null;
             if (PinQuizManager.instance != null)
                 PinQuizManager.instance.RemoveCoin(this);
@@ -41,6 +41,7 @@ namespace PinQuiz
             else
                 listPos.Add(new Vector3(param.transform.position.x - 1, param.transform.position.y + 5, param.transform.position.z));
             listPos.Add(new Vector3(param.transform.position.x, param.transform.position.y + 1, param.transform.position.z));
+
             transform.DOPath(listPos.ToArray(), Vector2.Distance(transform.position, param.transform.position) / 2, PathType.CatmullRom).
                 SetEase(Ease.InOutBack).OnComplete(() =>
                 {
@@ -52,7 +53,6 @@ namespace PinQuiz
                     effect.SetActive(true);
                     Destroy(effect, 3);*/
 
-                    SoundManager_BabyGirl.Instance.PlayOneShot($"Sounds/unlock");
                     Destroy(gameObject);
                 });
             //transform.DOScale(Vector2.zero, Vector2.Distance(transform.position, param.transform.position) / 2).SetEase(Ease.Linear);

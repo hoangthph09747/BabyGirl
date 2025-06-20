@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/PinQuiz/Core/Pin Quiz/Scenes/PinQuiz.unity
     guid: 1b60affe6bf739f468df718bfd2ba637
+  - enabled: 1
+    path: Assets/PinQuiz/Core/Pin Quiz/Scenes/New Scene.unity
+    guid: 574a47b7ea03d0d4e8aeec2b41d6ce37
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a8cd271847a0e2742991f76c8e5606d9, type: 2}
