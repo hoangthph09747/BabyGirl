@@ -1,0 +1,16 @@
+cua.png
+size:304,344
+filter:Linear,Linear
+cua_cang_1
+bounds:2,32,307,203
+rotate:90
+cua_mat_1
+bounds:207,25,135,87
+rotate:90
+cua_meu
+bounds:2,2,56,28
+cua_mieng_1
+bounds:60,2,56,28
+cua_than_1
+bounds:207,162,177,95
+rotate:90

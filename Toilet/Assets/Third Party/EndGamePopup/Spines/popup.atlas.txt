@@ -1,0 +1,51 @@
+popup.png
+size:1896,1412
+filter:Linear,Linear
+2
+bounds:1569,690,177,275
+offsets:0,0,178,275
+Layer 1
+bounds:2,586,823,823
+offsets:14,14,850,851
+XP 1
+bounds:1851,1368,37,41
+offsets:1,1,39,43
+XP 4
+bounds:1748,928,39,37
+offsets:1,1,41,39
+XP 5
+bounds:1293,7,39,37
+offsets:1,1,42,39
+center
+bounds:2,6,953,288
+offsets:1,2,955,291
+center-2
+bounds:2,296,952,288
+offsets:0,1,952,289
+cloud sad
+bounds:1472,67,600,422
+rotate:90
+disk
+bounds:827,669,740,740
+offsets:1,1,742,742
+left 1
+bounds:1569,1189,280,220
+offsets:1,1,282,222
+left 2
+bounds:1126,2,165,149
+offsets:1,1,167,151
+mic
+bounds:1293,46,133,105
+offsets:1,2,136,108
+mic-2
+bounds:827,597,88,70
+offsets:8,4,105,83
+right 1
+bounds:1569,967,280,220
+offsets:1,1,282,222
+right 2
+bounds:957,2,167,149
+offsets:1,1,169,151
+sunray
+bounds:957,153,513,514
+offsets:4,5,523,523
