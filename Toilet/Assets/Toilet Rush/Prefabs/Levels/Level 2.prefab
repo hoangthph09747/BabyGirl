@@ -148,7 +148,7 @@ PrefabInstance:
     - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 59b3e9f94657067458e104fb63dc535d, type: 2}
+      objectReference: {fileID: 2100000, guid: 4cd5269b857d2f140a6e126aec79d756, type: 2}
     - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
       propertyPath: m_Positions.Array.data[0].x
       value: -1.856363
@@ -196,6 +196,22 @@ PrefabInstance:
     - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
       propertyPath: m_Positions.Array.data[4].y
       value: 4.620309
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532895343875877356, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_ColorSpace
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6033027090177408077, guid: cbf6b66510468074084ebb5918eb488b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,6 +355,10 @@ PrefabInstance:
       propertyPath: m_Positions.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6958805810023019691, guid: e0cd536fbeb782e48a9288a1c0027098, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 22baa48f894cc5842b834f438a31808c, type: 2}
     - target: {fileID: 6958805810023019691, guid: e0cd536fbeb782e48a9288a1c0027098, type: 3}
       propertyPath: m_Positions.Array.data[0].x
       value: 2.7
