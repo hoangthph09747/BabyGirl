@@ -219,7 +219,7 @@ namespace PinQuiz
             SetRemovePins(false);
             MoveCamToTarget(princess.transform);
             mainCam.DOOrthoSize(4, 1);
-            winEff.transform.position = princess.transform.position + Vector3.down;
+            winEff.transform.position = princess.transform.position + Vector3.up*3;
             winEff.Play();
             SoundManager_BabyGirl.Instance.PlayOneShot("QuanSounds/Children Yay");
             this.DelayFunction(3, () => NextLevel() /*popupEndLevel.Show(EndGameType.Win)*/);

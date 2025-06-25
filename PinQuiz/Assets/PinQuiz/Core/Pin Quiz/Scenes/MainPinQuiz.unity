@@ -2750,7 +2750,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 24c72265da59efa46ba419284c034490, type: 3}
   - {fileID: 21300000, guid: 0550b08327298e244805ae4d0fde7102, type: 3}
   - {fileID: 21300000, guid: 79673fe70f4965f4a9287c23b7a712ad, type: 3}
-  winEff: {fileID: 526608815310332186}
+  winEff: {fileID: 6523195332124715925}
   lavaStone: {fileID: 2289105773423532431, guid: 68eebead46230b543a8ea6b2929ece49, type: 3}
   lavaEvaporationSound: {fileID: 8300000, guid: 9e68509e39354b846a3732e338527625, type: 3}
   itemLayerMask:
@@ -8479,7 +8479,6 @@ Transform:
   m_Children:
   - {fileID: 4675433652332663449}
   - {fileID: 3982900838795275764}
-  - {fileID: 8984844569697724707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &1706813985600270369
@@ -18432,7 +18431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &3060285806611921326
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -33234,7 +33233,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2273529583795302637}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
@@ -34119,7 +34118,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 70
+        scalar: 200
         minScalar: 8
         maxCurve:
           serializedVersion: 2
@@ -43355,12 +43354,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2273529583795302637}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.39, y: 5, z: 9.270002}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.32, y: -2.79, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1329236413208426466}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &9175868489823074354
 ParticleSystemRenderer:
@@ -48242,4 +48241,5 @@ SceneRoots:
   - {fileID: 5025536649887543631}
   - {fileID: 6868464677667340818}
   - {fileID: 8974863944779531392}
+  - {fileID: 8984844569697724707}
   - {fileID: 1329236413208426466}
