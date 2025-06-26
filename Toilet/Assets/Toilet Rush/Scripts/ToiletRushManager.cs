@@ -81,7 +81,7 @@ namespace ToiletRush
             // Debug.Log(Level);
             Map = Level / 3;
             levelText.text = "LEVEL " + (Level + 1).ToString();
-
+            LunaIntegrationManager.instance.LogEventLvStart(Level + 1);
             string levelAddress = $"Assets/HongQuan/Projects/Toilet Rush/Prefabs/Levels/Level {Level + 1}.prefab";
 
             if (Map == 0)
@@ -153,6 +153,7 @@ namespace ToiletRush
             if (EndGame) return; EndGame = true;
             winEff.Play();
             winUI.Show();
+            LunaIntegrationManager.instance.LogEventLvAchieved(Level + 1);
             // DOVirtual.DelayedCall(2,()=>{ NextLevel();});
             StartCoroutine(DelayedNextLevel(2));
            // MyAnalytics.GetInstance().LogWinGame();
@@ -166,6 +167,13 @@ namespace ToiletRush
         {
             if (EndGame) return; EndGame = true;
             Level = -1;
+            LunaIntegrationManager.instance.LogEventlevelLose(Level + 1);
+            if (LunaIntegrationManager.instance.OverTimeLimt)
+            {
+                LunaIntegrationManager.instance.OnGameFinished();
+                return;
+            }
+
             StartCoroutine(DelayedNextLevel(2));
             //loseUI.ShowHit();
         }
@@ -266,7 +274,12 @@ namespace ToiletRush
             //SetLevel(Level + 1);
             // LoadMainGame();
             Level++;
-            if (Level >= 3) Level = 0;
+            if (Level >= 3 || LunaIntegrationManager.instance.OverTimeLimt)
+            {
+                LunaIntegrationManager.instance.OnGameFinished();
+                Level = 0;
+                return;
+            }    
             LoadLevel();
             EndGame = false;
         }

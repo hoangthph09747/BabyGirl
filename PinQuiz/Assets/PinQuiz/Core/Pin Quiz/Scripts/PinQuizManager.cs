@@ -126,19 +126,9 @@ namespace PinQuiz
 
         private void Start()
         {
-#if !UNITY_EDITOR
-            levelIndex = -1;
-#endif
             if (!mainCam)
                 mainCam = Camera.main;
-            //InstantiateWinPrincess();
-
-            //levelIndex = -1;
-            if (levelIndex == -1)
-            {
-                levelIndex = PlayerPrefs.GetInt("Pin Quiz Level", 0);
-            }
-            if (levelIndex == -2) return;
+            levelIndex = 0;
             StartLevel();
             //Time.timeScale = 1.5f;
         }
@@ -165,15 +155,7 @@ namespace PinQuiz
         }
         private void StartLevel()
         {
-            try
-            {
-                //BonBonAdvertising.ShowInterstitialAd(LoadSceneManager.Instance.nameMinigame.ToString());
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogException(e);
-            }
-
+           LunaIntegrationManager.instance.LogEventLvStart(levelIndex+1);
             SetActiveLavaCamera(false);
             SetActiveSlimeCamera(false);
             SetActiveWaterCamera(false);
@@ -213,9 +195,12 @@ namespace PinQuiz
         {
             if (isDoneGame) return;
             isDoneGame = true;
-            if (PlayerPrefs.GetInt("Unlock Pin Quiz Level", 0) <= levelIndex)
-                PlayerPrefs.SetInt("Unlock Pin Quiz Level", levelIndex + 1);
-
+            LunaIntegrationManager.instance.LogEventLvAchieved(levelIndex+1);
+            if (levelIndex >=2 || LunaIntegrationManager.instance.OverTimeLimt)
+            {
+                LunaIntegrationManager.instance.OnGameFinished();
+                return;
+            }
             SetRemovePins(false);
             MoveCamToTarget(princess.transform);
             mainCam.DOOrthoSize(4, 1);
@@ -229,9 +214,17 @@ namespace PinQuiz
 
         public void LoseGame(EndGameType loseType = EndGameType.CoinStuck)
         {
+            
+
             if (isDoneGame) return;
             isDoneGame = true;
-
+           LunaIntegrationManager.instance.LogEventlevelLose(levelIndex + 1);
+            if (LunaIntegrationManager.instance.OverTimeLimt)
+            {
+                LunaIntegrationManager.instance.OnGameFinished();
+                return;
+            }
+            levelIndex = 0;
             Time.timeScale = 1.5f;
             SetRemovePins(false);
             mainCam.DOOrthoSize(4, 1);

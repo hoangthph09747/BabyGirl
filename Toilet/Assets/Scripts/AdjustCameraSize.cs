@@ -23,7 +23,7 @@ namespace HongQuan
             float aspect = (float)Screen.width / Screen.height;
             float camWidth = cam.orthographicSize * aspect;
 
-            //Debug.Log("Cam width = "+camWidth);
+           // Debug.Log("Cam width = "+camWidth);
             if (camWidth >= minCameraWidth) return;
             cam.orthographicSize *= minCameraWidth / camWidth;
             onDone?.Invoke(cam.orthographicSize);
