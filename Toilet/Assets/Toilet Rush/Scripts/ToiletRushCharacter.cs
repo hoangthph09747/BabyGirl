@@ -16,7 +16,7 @@ namespace ToiletRush
     public class ToiletRushCharacter : MonoBehaviour
     {
         [SerializeField] private float speed = 10f;
-        [SerializeField] private float duration = 4f;
+        [SerializeField] private float duration = 3f;
         [SerializeField] private ToiletRushToilet toilet;
         //[SerializeField] private ParticleSystem hitEff;
         [SerializeField] private ToiletRushGuideLine guideLine;
@@ -45,7 +45,7 @@ namespace ToiletRush
 
         [SerializeField] AudioClip hitSound;
         [SerializeField] AudioClip crySound;
-
+        [SerializeField] AudioClip walkSound;
         private ToiletRushLevel level;
     //    private TweenerCore<Vector3, Path, PathOptions> moveTween;
         private SkeletonAnimation anim;
@@ -479,7 +479,7 @@ namespace ToiletRush
             float elapsed = 0f;
             int currentSegment = 0;
             transform.position = path[0];
-
+            SoundManager_BabyGirl.Instance.PlaySoundEffectOneShot(walkSound);
             while (currentSegment < path.Length - 1)
             {
                 Vector3 start = path[currentSegment];

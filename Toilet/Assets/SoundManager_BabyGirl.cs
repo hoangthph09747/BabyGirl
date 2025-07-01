@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 //using SettingUI;
 //using DG.Tweening;
-using UnityEngine.Rendering;
 
 public class SoundManager_BabyGirl : MonoBehaviour
 {
@@ -301,12 +300,13 @@ public class SoundManager_BabyGirl : MonoBehaviour
         fxSource.Stop();
     }
 
-    public void PlaySoundEffectOneShot(AudioClip clip, float volume = 1)
+    public void PlaySoundEffectOneShot(AudioClip clip, float volume = 1,bool loop=false)
     {
         //if (PlayerPrefs.GetInt(ConstantSetting.SoundEnable, 1) == 1)
         {
             if (clip != null)
             {
+                fxSource.loop = loop;
                 fxSource.PlayOneShot(clip, volume);
             }
             else

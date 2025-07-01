@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  duration: 4
+  duration: 2
   toilet: {fileID: 3689753040207225270}
   guideLine: {fileID: 4372474974689906785}
   gender: 0
@@ -284,6 +284,7 @@ MonoBehaviour:
   snowmanAnimation: scene_lost_nguoituyet
   hitSound: {fileID: 8300000, guid: 53dd27259b3f96e4db7eda6b77d87d97, type: 3}
   crySound: {fileID: 8300000, guid: f9ae3af15af2412439139b536c4e861d, type: 3}
+  walkSound: {fileID: 8300000, guid: 8e8b0af06561c8b44bce42301c8b06bf, type: 3}
   BeetlePos: {fileID: 66772920669822649}
   CrabPos: {fileID: 8887694087670646952}
   SkateBoardPos: {fileID: 3135214552179764023}

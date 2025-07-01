@@ -352,13 +352,14 @@ namespace PinQuiz
 
         public void SetActiveWaterCamera(bool isActive)
         {
-            if (PinQuizFluid.isLowRes) return;
-            waterCamera.SetActive(isActive);
+           // if (PinQuizFluid.isLowRes) return;
+          //  waterCamera.SetActive(isActive);
         }
         public void SetActiveLavaCamera(bool isActive)
         {
-            if (PinQuizFluid.isLowRes) return;
-            lavaCamera.SetActive(isActive);
+            //if (PinQuizFluid.isLowRes) return;
+           
+           // lavaCamera.SetActive(isActive);
         }
         public void SetActiveSlimeCamera(bool isActive)
         {

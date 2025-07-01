@@ -152,6 +152,7 @@ namespace ToiletRush
         {
             if (EndGame) return; EndGame = true;
             winEff.Play();
+            SoundManager_BabyGirl.Instance.StopSoundEffect();
             winUI.Show();
             LunaIntegrationManager.instance.LogEventLvAchieved(Level + 1);
             // DOVirtual.DelayedCall(2,()=>{ NextLevel();});
