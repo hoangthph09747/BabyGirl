@@ -224,7 +224,7 @@ namespace frame8.Logic.Misc.Other
 
 		// Taken from https://answers.unity.com/questions/1221847/get-position-of-specific-letter-in-ui-text.html
 		// Order: top-left, top-right etc
-		public UIVertex[] GetCharQuadVertsInObjectSpaceUnscaledByCanvas(Text textComp, int charIndex)
+		/*public UIVertex[] GetCharQuadVertsInObjectSpaceUnscaledByCanvas(Text textComp, int charIndex)
 		{
 			UIVertex[] result = null;
 			string text = textComp.text;
@@ -248,9 +248,9 @@ namespace frame8.Logic.Misc.Other
 			}
 
 			return result;
-		}
+		}*/
 
-		public void GetUITextCharQuadVertsPositionsInObjectSpaceScaledByCanvas(Text textComp, int charIndex, out Vector3[] positions)
+		/*public void GetUITextCharQuadVertsPositionsInObjectSpaceScaledByCanvas(Text textComp, int charIndex, out Vector3[] positions)
 		{
 			var vertices = GetCharQuadVertsInObjectSpaceUnscaledByCanvas(textComp, charIndex);
 			if (vertices == null)
@@ -263,17 +263,17 @@ namespace frame8.Logic.Misc.Other
 			var cScaleFactor = textComp.canvas.scaleFactor;
 			for (int i = 0; i < positions.Length; i++)
 				positions[i] = vertices[i].position / cScaleFactor;
-		}
+		}*/
 
-		public Vector3[] GetCharQuadVertsPositionsInObjectSpaceScaledByCanvas(Text textComp, int charIndex)
+		/*public Vector3[] GetCharQuadVertsPositionsInObjectSpaceScaledByCanvas(Text textComp, int charIndex)
 		{
 			Vector3[] positions;
 			GetUITextCharQuadVertsPositionsInObjectSpaceScaledByCanvas(textComp, charIndex, out positions);
 
 			return positions;
 		}
-
-		public Vector3[] GetCharQuadVertsPositionsInWorldSpaceScaledByCanvas(Text textComp, int charIndex)
+*/
+		/*public Vector3[] GetCharQuadVertsPositionsInWorldSpaceScaledByCanvas(Text textComp, int charIndex)
 		{
 			Vector3[] positions = GetCharQuadVertsPositionsInObjectSpaceScaledByCanvas(textComp, charIndex);
 			if (positions != null)
@@ -287,9 +287,9 @@ namespace frame8.Logic.Misc.Other
 			}
 
 			return positions;
-		}
+		}*/
 
-		public Vector3? GetCharQuadCenterPositionInObjectSpaceScaledByCanvas(Text textComp, int charIndex)
+		/*public Vector3? GetCharQuadCenterPositionInObjectSpaceScaledByCanvas(Text textComp, int charIndex)
 		{
 			Vector3? res = null;
 			Vector3[] positions = GetCharQuadVertsPositionsInObjectSpaceScaledByCanvas(textComp, charIndex);
@@ -317,7 +317,7 @@ namespace frame8.Logic.Misc.Other
 				res = (positions[0] + positions[3]) / 2f;
 
 			return res;
-		}
+		}*/
 
 		public override void Init()
 		{

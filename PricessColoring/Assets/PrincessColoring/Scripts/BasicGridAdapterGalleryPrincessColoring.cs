@@ -61,10 +61,10 @@ using System.IO;
 
         }
 
-        private void OnEnable()
+       /* private void OnEnable()
         {
 			RetrieveDataAndUpdate();
-		}
+		}*/
 
         // This is called anytime a previously invisible item become visible, or after it's created, 
         // or when anything that requires a refresh happens
@@ -131,12 +131,12 @@ using System.IO;
 
 
 		// Here, we're requesting <count> items from the data source
-		void RetrieveDataAndUpdate()
+		/*void RetrieveDataAndUpdate()
 		{
 			StartCoroutine(FetchMoreItemsFromDataSourceAndUpdate());
 		}
-
-		List<string> GetJpgFilesInFolder(string path)
+*/
+		/*List<string> GetJpgFilesInFolder(string path)
 		{
 			List<string> jpgFiles = new List<string>();
 
@@ -166,7 +166,7 @@ using System.IO;
 			});
 
 			return jpgFiles;
-		}
+		}*/
 
 		string GetPathFolderScreenshot()
         {
@@ -202,7 +202,7 @@ using System.IO;
 
 		// Retrieving <count> models from the data source and calling OnDataRetrieved after.
 		// In a real case scenario, you'd query your server, your database or whatever is your data source and call OnDataRetrieved after
-		IEnumerator FetchMoreItemsFromDataSourceAndUpdate()
+		/*IEnumerator FetchMoreItemsFromDataSourceAndUpdate()
 		{
 			// Simulating data retrieving delay
 			yield return new WaitForSeconds(.15f);
@@ -229,7 +229,7 @@ using System.IO;
 
             OnDataRetrieved(newItems);
 		}
-
+*/
 		void OnDataRetrieved(MyGridItemModel_PrincessColoring[] newItems)
 		{
 			//Commented: this only works with Lists. ATM, Insert for Grids only works by manually changing the list and calling NotifyListChangedExternally() after
