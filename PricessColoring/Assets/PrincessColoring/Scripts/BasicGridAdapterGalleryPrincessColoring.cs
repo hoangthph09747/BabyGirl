@@ -82,8 +82,9 @@ using System.IO;
 			Destroy(newOrRecycled.rawImage.texture);
 			newOrRecycled.rawImage.texture = null;
 			//StartCoroutine(newOrRecycled.LoadImageCoroutine());
-			newOrRecycled.rawImage.texture = SaveSystem.LoadTexture2D(model.pathThumb);
-			//newOrRecycled.rawImage.SetNativeSize();
+			//newOrRecycled.rawImage.texture = SaveSystem.LoadTexture2D(model.pathThumb);
+            // TODO: Load texture from Resources or another method, since SaveSystem is removed.
+            newOrRecycled.rawImage.texture = null;
 			newOrRecycled.pathScreenshot = model.pathScreenshot;
 			newOrRecycled.pathThumb = model.pathThumb;
 		}
@@ -171,12 +172,12 @@ using System.IO;
         {
 			switch(nameMinigame)
             {
-				case NameMinigame.CakeGame:
-					return SaveSystem.SAVE_FOLDER_CAKE_Screenshot;
-					break;
-				case NameMinigame.PrincessColoring:
-					return SaveSystem.SAVE_FOLDER_PrincessColoring_Gallery;
-					break;
+				//case NameMinigame.CakeGame:
+				//	return SaveSystem.SAVE_FOLDER_CAKE_Screenshot;
+				//	break;
+				//case NameMinigame.PrincessColoring:
+				//	return SaveSystem.SAVE_FOLDER_PrincessColoring_Gallery;
+				//	break;
 				default:
 					return null;
 					break;
@@ -187,12 +188,12 @@ using System.IO;
 		{
 			switch (nameMinigame)
 			{
-				case NameMinigame.CakeGame:
-					return SaveSystem.SAVE_FOLDER_CAKE_Thumb;
-					break;
-				case NameMinigame.PrincessColoring:
-					return SaveSystem.SAVE_FOLDER_PrincessColoring_Thumb;
-					break;
+				//case NameMinigame.CakeGame:
+				//	return SaveSystem.SAVE_FOLDER_CAKE_Thumb;
+				//	break;
+				//case NameMinigame.PrincessColoring:
+				//	return SaveSystem.SAVE_FOLDER_PrincessColoring_Thumb;
+				//	break;
 				default:
 					return null;
 					break;

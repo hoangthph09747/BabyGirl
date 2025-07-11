@@ -231,10 +231,10 @@ public class SoundManager_BabyGirl : MonoBehaviour
     IEnumerator RestoreBGM()
     {
         //resume audio
-        AudioListener.pause = false;
+       /* AudioListener.pause = false;
         AudioListener.volume = 1f;
         //reset audio settings
-        AudioSettings.Reset(AudioSettings.GetConfiguration());
+        AudioSettings.Reset(AudioSettings.GetConfiguration());*/
         yield return new WaitForSeconds(0.5f); // đợi 0.5s để đảm bảo audio đã reset xong
         //chạy lại nhạc nền nếu trước đó nó đang chạy
         if (isPlayingBg)
@@ -246,14 +246,6 @@ public class SoundManager_BabyGirl : MonoBehaviour
         }
     }
 
-    void ResumeAndResetAudioSettings()
-    {
-        //resume audio
-        AudioListener.pause = false;
-        AudioListener.volume = 1f;
-        //reset audio settings
-        AudioSettings.Reset(AudioSettings.GetConfiguration());
-    }
 
     /* ---Hiephm---*/
 

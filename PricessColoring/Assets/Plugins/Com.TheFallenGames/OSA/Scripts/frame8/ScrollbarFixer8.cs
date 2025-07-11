@@ -1,10 +1,11 @@
 ﻿//using System;
+using Com.TheFallenGames.OSA.Core;
+using frame8.Logic.Misc.Other.Extensions;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using UnityEngine.Events;
-using frame8.Logic.Misc.Other.Extensions;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace frame8.Logic.Misc.Visual.UI.MonoBehaviours
 {
@@ -183,21 +184,21 @@ namespace frame8.Logic.Misc.Visual.UI.MonoBehaviours
 				scrollRect.onValueChanged.AddListener(ScrollRect_OnValueChangedCalled);
 
 				// May be null
-				externalScrollRectProxy = scrollRect.GetComponent(typeof(IScrollRectProxy)) as IScrollRectProxy;
-			}
+				externalScrollRectProxy = scrollRect.GetComponent<IScrollRectProxy>();
+            }
 			else
 			{
 				if (externalScrollRectProxy == null)
 				{
 					// Start with directly with the parent when searching for IScrollRectProxy, as the scrollbar itself is a IScrollRectProxy and needs to be avoided;
-					externalScrollRectProxy = transform.parent.GetComponentInParent(typeof(IScrollRectProxy)) as IScrollRectProxy;
-					if (externalScrollRectProxy == null)
+					externalScrollRectProxy = transform.parent.GetComponentInParent<IScrollRectProxy>();
+                    if (externalScrollRectProxy == null)
 					{
 						// Try starting from the viewport, as the scrollbar might not be a child of the target ScrollView
 						if (viewport)
-							externalScrollRectProxy = viewport.GetComponentInParent(typeof(IScrollRectProxy)) as IScrollRectProxy;
+							externalScrollRectProxy = viewport.GetComponentInParent<IScrollRectProxy>();
 
-						if (externalScrollRectProxy == null)
+                        if (externalScrollRectProxy == null)
 						{
 							if (enabled)
 							{

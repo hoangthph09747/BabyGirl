@@ -243,7 +243,8 @@ public class DrawPictureController : Singleton<DrawPictureController>
         //screenCameraControllerGitller.GetComponent<Camera>().orthographicSize = screenCameraController.GetComponent<ZoomCamera>().ZoomMaxBound;
         screenCameraController.GetComponent<Camera>().orthographicSize = 880;
         screenCameraControllerGitller.GetComponent<Camera>().orthographicSize = 880;
-        TakeScreenshot.instance.CreateTextureScreenshot(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot, _canvasController.PageConfig.name + ".jpg");
+        // TakeScreenshot.instance.CreateTextureScreenshot(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot, _canvasController.PageConfig.name + ".jpg");
+        // TODO: Implement screenshot logic if needed. TakeScreenshot reference removed.
         uiDraw.SetActive(false);
         uiTakeScreenshot.SetActive(true);
         
@@ -300,7 +301,8 @@ public class DrawPictureController : Singleton<DrawPictureController>
         SpriteRenderer bgScreenshot = bgs[indexBg].GetComponent<SpriteRenderer>();
         
 
-        spriteRendererScreenshot.sprite = SaveSystem.LoadSprite(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot + "/" + _canvasController.PageConfig.name + ".jpg");
+        spriteRendererScreenshot.sprite = null;
+        // TODO: Replace SaveSystem usage for sprite loading.
        
         if (bgScreenshot.sprite.rect.size.x < spriteRendererScreenshot.sprite.rect.size.x)
             spriteRendererScreenshot.transform.localScale = Vector3.one * (bgScreenshot.sprite.rect.size.x / spriteRendererScreenshot.sprite.rect.size.x) * 0.95f;
@@ -337,7 +339,8 @@ public class DrawPictureController : Singleton<DrawPictureController>
         screenCameraController.GetComponent<Camera>().orthographicSize = screenCameraController.GetComponent<ZoomCamera>().ZoomMaxBound;
         screenCameraControllerGitller.GetComponent<Camera>().orthographicSize = screenCameraController.GetComponent<ZoomCamera>().ZoomMaxBound;
         FindObjectOfType<PrincessColoring.SliderZoomCamera>().gameObject.SetActive(false);
-        TakeScreenshot.instance.CreateTextureScreenshot(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot, _canvasController.PageConfig.name + ".jpg");
+        // TakeScreenshot.instance.CreateTextureScreenshot(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot, _canvasController.PageConfig.name + ".jpg");
+        // TODO: Implement screenshot logic if needed. TakeScreenshot reference removed.
 
         bgSwitchPage.DOFade(1, 1).SetEase(Ease.OutBack).SetDelay(0.5f);
         StartCoroutine(GoHome());
@@ -591,7 +594,8 @@ public class DrawPictureController : Singleton<DrawPictureController>
 
         string dateTime = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
         string name = _canvasController.PageConfig.name + dateTime + ".png";
-        SaveSystem.SaveTexture(screnshotTexture.EncodeToPNG(), SaveSystem.SAVE_FOLDER_PrincessColoring_Gallery , name);
+        // SaveSystem.SaveTexture(screnshotTexture.EncodeToPNG(), SaveSystem.SAVE_FOLDER_PrincessColoring_Gallery , name);
+        // TODO: Replace SaveSystem usage for texture saving.
 
         if (textureScreenThumb == null)
             textureScreenThumb = new Texture2D((int)(screnshotTexture.width), (int)(screnshotTexture.height),
@@ -605,8 +609,9 @@ public class DrawPictureController : Singleton<DrawPictureController>
         textureScreenThumb.SetPixels(screnshotTexture.GetPixels());
         textureScreenThumb.Apply();
 
-        SaveSystem.scale(textureScreenThumb, (int)(screnshotTexture.width * 0.5f), (int)(screnshotTexture.height * 0.5f));
-        SaveSystem.SaveTexture(textureScreenThumb.EncodeToPNG(), SaveSystem.SAVE_FOLDER_PrincessColoring_Thumb, name);
+        // SaveSystem.scale(textureScreenThumb, (int)(screnshotTexture.width * 0.5f), (int)(screnshotTexture.height * 0.5f));
+        // SaveSystem.SaveTexture(textureScreenThumb.EncodeToPNG(), SaveSystem.SAVE_FOLDER_PrincessColoring_Thumb, name);
+        // TODO: Replace SaveSystem usage for scaling and saving texture.
 
         bgSaveGallery.gameObject.SetActive(true);
 

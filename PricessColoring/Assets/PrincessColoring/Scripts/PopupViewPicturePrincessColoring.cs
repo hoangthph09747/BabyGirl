@@ -36,7 +36,9 @@ public class PopupViewPicturePrincessColoring : MonoBehaviour
         this.pathThumb = pathThumb;
         if (screenshot.texture != null)
             Destroy(screenshot.texture);
-        screenshot.texture = SaveSystem.LoadTexture2D(pathScreenshot);
+        screenshot.texture = null;
+        // TODO: Load texture from Resources or another method, since SaveSystem is removed.
+        // screenshot.texture = SaveSystem.LoadTexture2D(pathScreenshot);
         screenshot.transform.DOScale(Vector2.one, 0.5f).SetEase(Ease.OutBack);
         bg.DOFade(0.85f, 0.5f);
         bg.raycastTarget = true;
@@ -74,8 +76,9 @@ public class PopupViewPicturePrincessColoring : MonoBehaviour
     {
         SoundManager_BabyGirl.Instance.PlayOneShot("Sounds/UI/Delete");
         galleryPrincessColoring.gameObject.SetActive(false);
-        SaveSystem.DeleteFile(pathScreenshot);
-        SaveSystem.DeleteFile(pathThumb);
+        // SaveSystem.DeleteFile(pathScreenshot);
+        // SaveSystem.DeleteFile(pathThumb);
+        // TODO: Delete files using System.IO.File.Delete or another method, since SaveSystem is removed.
         Hide();
         galleryPrincessColoring.gameObject.SetActive(true);
     }

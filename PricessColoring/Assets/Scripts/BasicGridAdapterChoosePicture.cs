@@ -82,9 +82,10 @@ namespace PrincessColoring
 
 			if (model.pageConfig != null)
 			{
-				newOrRecycled.rawImage.texture = SaveSystem.LoadTexture2D(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot + "/" + model.pageConfig.name + ".jpg");
-				if (newOrRecycled.rawImage.texture == null)
-					newOrRecycled.rawImage.texture = model.pageConfig.OutlineTexture;
+				//newOrRecycled.rawImage.texture = SaveSystem.LoadTexture2D(SaveSystem.SAVE_FOLDER_PrincessColoring_Screenshot + "/" + model.pageConfig.name + ".jpg");
+                // TODO: Load texture from Resources or another method, since SaveSystem is removed.
+                newOrRecycled.rawImage.texture = null;
+				//newOrRecycled.rawImage.texture = model.pageConfig.OutlineTexture;
 				newOrRecycled.pageConfig = model.pageConfig;
 				newOrRecycled.imageIconDownload.gameObject.SetActive(false);
 				newOrRecycled.backgroundImage.color = Color.white;

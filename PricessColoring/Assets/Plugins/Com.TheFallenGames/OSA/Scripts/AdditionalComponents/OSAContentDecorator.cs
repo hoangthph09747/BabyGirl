@@ -61,14 +61,14 @@ namespace Com.TheFallenGames.OSA.AdditionalComponents
 			_ParentRT = _RT.parent as RectTransform;
 			if (_OSA == null)
 			{
-				_OSA = _ParentRT.GetComponentInParent(typeof(IOSA)) as IOSA;
+				_OSA = _ParentRT.GetComponentInParent< IOSA >();
 				if (_OSA == null)
 					throw new OSAException("Component implementing IOSA not found in parents");
 			}
 			else
 			{
-				_OSA = _OSATransform.GetComponent(typeof(IOSA)) as IOSA;
-				if (_OSA == null)
+				_OSA = _OSATransform.GetComponent<IOSA>();
+                if (_OSA == null)
 					throw new OSAException("Component implementing IOSA not found on the specified object '" + _OSATransform.name + "'");
 			}
 

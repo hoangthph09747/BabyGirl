@@ -263,7 +263,7 @@ namespace PaintCraft.Controllers
                                     //    toolsType1 = DrawPictureControllerASMR.Instance.ToolsType;
                                     //}
                                     toolsType1 = DrawPictureController.Instance.ToolsType;
-                                    if (toolsType1 is ToolsType.Fills or ToolsType.Stamps)
+                                    if (toolsType1 == ToolsType.Fills || toolsType1 == ToolsType.Stamps)
                                         EndLineOneTouch(0, worldPosition);
                                     else
                                         EndLine(0, worldPosition);
@@ -340,7 +340,7 @@ namespace PaintCraft.Controllers
                         //    toolsType1 = DrawPictureControllerASMR.Instance.ToolsType;
                         //}
                         toolsType1 = DrawPictureController.Instance.ToolsType;
-                        if (toolsType1 is ToolsType.Fills or ToolsType.Stamps)
+                        if (toolsType1 == ToolsType.Fills || toolsType1 == ToolsType.Stamps)
                             EndLineOneTouch(0, worldPosition);
                         else
                             EndLine(0, worldPosition);

@@ -44,6 +44,7 @@ public class ColoringManager : MonoBehaviour
     void ClickTakeScreenshot()
     {
         DOTween.Kill(buttonTakeScreenshot.transform);
+        // TODO: Implement screenshot logic if needed. TakeScreenshot reference removed.
     }
 
     WaitForSeconds time = new WaitForSeconds(1);
@@ -102,7 +103,7 @@ public class ColoringManager : MonoBehaviour
                     }
 
                     renderTexture.Release();
-                    renderTexture.DiscardContents(true, true);
+                    renderTexture.DiscardContents(/*true, true*/);
                 }
             }
         } 

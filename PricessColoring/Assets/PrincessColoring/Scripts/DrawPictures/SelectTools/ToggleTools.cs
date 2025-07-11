@@ -53,7 +53,7 @@ public class ToggleTools : MonoBehaviour, IPointerDownHandler
             //    DrawPictureControllerASMR.Instance.ToolsType = toolsType;
 
             DrawPictureController.Instance.ToolsType = toolsType;
-            if (toolsType is ToolsType.Colors or ToolsType.Fills)
+            if (toolsType == ToolsType.Colors || toolsType == ToolsType.Fills)
                 toggleColors?.OnValueChange(true);
             else
                 toggleTextures?.OnValueChange(true);
