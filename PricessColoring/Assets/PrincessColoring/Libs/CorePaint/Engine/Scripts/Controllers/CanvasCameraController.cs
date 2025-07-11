@@ -26,7 +26,7 @@ namespace PaintCraft.Controllers
 
 		public void Init(CanvasController canvas)
 		{
-			Camera = GetComponent<Camera>();
+            /*Camera = GetComponent<Camera>();
 			if (Camera == null)
 			{
 				Camera = gameObject.AddComponent<Camera>();
@@ -47,8 +47,27 @@ namespace PaintCraft.Controllers
 			Camera.clearFlags = CameraClearFlags.Nothing;
 			canvasCtrl = canvas;
 			Camera.targetTexture = canvasCtrl.BackLayerController.RenderTexture;
-			Initialized = true;
-		}
+			Initialized = true;*/
+            Camera = GetComponent<Camera>();
+            if (Camera == null)
+            {
+                Camera = gameObject.AddComponent<Camera>();
+            }
+
+
+            Camera.orthographic = true;
+            Camera.clearFlags = CameraClearFlags.Nothing;
+            Camera.backgroundColor = Color.black;
+            Camera.orthographicSize = (float)canvas.Height / 2.0f;
+            Camera.aspect = (float)canvas.Width / (float)canvas.Height;
+
+            canvasCtrl = canvas;
+            if (canvasCtrl.BackLayerController != null && canvasCtrl.BackLayerController.RenderTexture != null)
+            {
+                Camera.targetTexture = canvasCtrl.BackLayerController.RenderTexture;
+            }
+            Initialized = true;
+        }
 
 		public void SetNewSize()
 		{

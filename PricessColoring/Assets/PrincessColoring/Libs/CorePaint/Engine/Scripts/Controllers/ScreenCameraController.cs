@@ -62,9 +62,9 @@ namespace PaintCraft.Controllers
 
             cameraDrag = GetComponent<CameraDrag>();
             pinchZoom = GetComponent<PinchZoom>();
-            commandBuffer = new CommandBuffer();
+            /*commandBuffer = new CommandBuffer();
             commandBuffer.name = gameObject.name;
-            Camera.AddCommandBuffer(CameraEvent.AfterEverything, commandBuffer);
+            Camera.AddCommandBuffer(CameraEvent.AfterEverything, commandBuffer);*/
             Canvas.OnPageChange += OnPageChangeHandler;
         }
 

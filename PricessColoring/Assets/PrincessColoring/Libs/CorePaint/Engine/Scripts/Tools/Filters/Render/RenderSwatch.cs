@@ -82,6 +82,7 @@ namespace PaintCraft.Tools.Filters.MaterialFilter{
                             mpb     // MaterialPropertyBlock (null nếu không cần)
                         );
 
+
                         point.Value.Status = PointStatus.CopiedToCanvas;                                 
                         usedMeshes.Enqueue(mesh);
 					} else if (point.Value.Status == PointStatus.Temporary){                                                						

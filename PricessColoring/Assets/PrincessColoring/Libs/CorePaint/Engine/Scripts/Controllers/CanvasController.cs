@@ -167,11 +167,7 @@ namespace PaintCraft.Controllers
             }
             else
             {
-# if UNITY_EDITOR
-				tmpTexture2D.Reinitialize((int)RenderTextureSize.x, (int)RenderTextureSize.y);
-#else
 				tmpTexture2D.Resize((int)RenderTextureSize.x, (int)RenderTextureSize.y);
-#endif
                 tmpTexture2D.Apply();
             }
 
@@ -266,7 +262,7 @@ namespace PaintCraft.Controllers
 			}
 
 			//ngocdu
-			Invoke(nameof(LoadFromDiskOrClear), 0.5f);
+			//Invoke(nameof(LoadFromDiskOrClear), 0.5f);
 			// LoadFromDiskOrClear();
 			if (OnPageChange != null)
 			{

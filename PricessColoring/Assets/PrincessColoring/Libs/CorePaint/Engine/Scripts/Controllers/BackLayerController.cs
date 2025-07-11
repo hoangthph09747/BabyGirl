@@ -64,7 +64,7 @@ namespace PaintCraft.Controllers
 
             //string shaderName = canvas.DefaultBGColor.a == 1.0 ? "Unlit/Texture" : "Unlit/Transparent";
             //ngocdu
-            string shaderName = canvas.DefaultBGColor.a == 1.0 ? "MK/Glow/Selective/Transparent/Diffuse" : "Unlit/Transparent";
+       /*     string shaderName = canvas.DefaultBGColor.a == 1.0 ? "MK/Glow/Selective/Transparent/Diffuse" : "Unlit/Transparent";
 
             //ngocdu
            if (canvas.typePen == TypePen.Giltter)
@@ -87,12 +87,12 @@ namespace PaintCraft.Controllers
                 //{
                 //    shaderName = "Unlit/DIY";
                 //}    
-            }
+            }*/
 
-            mr.material = new Material(Shader.Find(shaderName));
+            mr.material = new Material(Shader.Find("Unlit/Transparent"));
             RenderTexture = TextureUtil.SetupRenderTextureOnMaterial(mr.material, canvas.RenderTextureSize.x, canvas.RenderTextureSize.y);  
 
-            if (canvas.typePen == TypePen.Giltter )
+           /* if (canvas.typePen == TypePen.Giltter )
             {
                 //------------------giltter-----------------
                 ////Spaventacorvi/Glitter/ 
@@ -128,7 +128,7 @@ namespace PaintCraft.Controllers
 
                 ShowGiltterTexture();
             }
-
+*/
             //if (LoadSceneManager.Instance?.nameMinigame == NameMinigame.DIY)
             //    mr.material.SetTexture("_MaskTex", DIY.GameManager_DIY.Instance.maskTex);
 
