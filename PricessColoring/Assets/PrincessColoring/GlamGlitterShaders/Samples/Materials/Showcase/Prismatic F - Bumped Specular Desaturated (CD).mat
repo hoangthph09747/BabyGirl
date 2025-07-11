@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Prismatic F - Bumped Specular Desaturated (CD)
+  m_Shader: {fileID: 4800000, guid: 4df7c31f81d6f334eb0bba2049ebce3a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: 34ad3ef734f884a46972f448cbed41bb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Decal:
+        m_Texture: {fileID: 2800000, guid: acc890529cc0828469aeda50186cf4ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: acc890529cc0828469aeda50186cf4ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 9ba225dca07a5a246b836196e0d4ef75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PrismMask:
+        m_Texture: {fileID: 2800000, guid: 45b860b06847270438df134b914c77f0, type: 3}
+        m_Scale: {x: 0.7, y: 0.7}
+        m_Offset: {x: 0.15, y: 0.15}
+    - _Prismraimbow:
+        m_Texture: {fileID: 2800000, guid: f79f47e7237ca1d4b954ddeac0e86071, type: 3}
+        m_Scale: {x: 0.7, y: 0.7}
+        m_Offset: {x: 0.15, y: 0.15}
+    - vvxwwx:
+        m_Texture: {fileID: 2800000, guid: 9ba225dca07a5a246b836196e0d4ef75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vxwvxx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vxwwww:
+        m_Texture: {fileID: 2800000, guid: 45b860b06847270438df134b914c77f0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wwvxvx:
+        m_Texture: {fileID: 2800000, guid: f79f47e7237ca1d4b954ddeac0e86071, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wxxwxw:
+        m_Texture: {fileID: 2800000, guid: ffd23007d6b5fc54eaf2efdf0c53ed3d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BackgroundtranspBlack: 0
+    - _Cubemapblur: 0.17
+    - _Cubemapblur05: 2
+    - _Cubemappower01: 0.5
+    - _Depthdivide: 10
+    - _DesatFrsnl01: 0.7
+    - _Desatnear01: 0.5
+    - _Desaturation01: 0.5714286
+    - _Desaturationfar01: 0
+    - _Fadedistance: 40
+    - _ForegroundtranspWhite: 1
+    - _Gloss01: 0.4
+    - _Prismcontrast15: 5
+    - _Prismmultiplier: 2
+    - _Prismpower15: 2.9285715
+    - _Silver01: 1
+    - _Silverback01: 0.5
+    - _Silverfar01: 1
+    - _Silvernear01: 0.30357143
+    - _Specular01: 1
+    - _Speed: 3.4
+    - _Speed05: 3.5
+    - _node_3391: 0
+    - _node_4482: 0
+    - _node_7552: 2
+    - vvxxvv: 1
+    - vvxxww: 0
+    - vxvvvw: 5
+    - vxxxwx: 3
+    - wwxxvv: 0
+    - wxvxxw: 0.5
+    - wxwxxv: 2
+    - wxxwww: 0
+    - wxxxvv: 40
+    - wxxxvw: 1
+    - wxxxww: 0.5
+    - xvwvwx: 3.5
+    - xvxwww: 2
+    - xwxvww: 0.4
+    - xxvvwv: 1
+    - xxwvxx: 0.5
+    - xxwxww: 0.7
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _Decalcolor: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _Prismcolor: {r: 1, g: 1, b: 1, a: 1}
+    - vwwvvx: {r: 1, g: 1, b: 1, a: 1}

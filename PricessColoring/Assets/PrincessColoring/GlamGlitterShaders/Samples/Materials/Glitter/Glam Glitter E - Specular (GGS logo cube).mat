@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glam Glitter E - Specular (GGS logo cube)
+  m_Shader: {fileID: 4800000, guid: b62ee0b8cee7afc4ab52289105bb0316, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dcd5bb72dd10f414cba3355543c2a1bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vvxxww:
+        m_Texture: {fileID: 2800000, guid: 813502127469c9f499d819a641ca0ca8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwwvvx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwxwww:
+        m_Texture: {fileID: 2800000, guid: 3c473c8b1b627574c8c50f0ed6da2044, type: 3}
+        m_Scale: {x: 1.5, y: 1.5}
+        m_Offset: {x: -5.85, y: 0}
+    - wvvxxv:
+        m_Texture: {fileID: 2800000, guid: 8f2f8441d9045af4291515f186d9179a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - vvxwwx: 0.05
+    - vwwxwx: 7
+    - vxvvvw: 1.5
+    - vxwwww: 1.4
+    - wvvxxw: 1.3
+    - wvwvww: 0.5
+    - wvwwxv: 1.15
+    - wxxxvv: 1.5
+    - xvwvwx: 0.6
+    - xxwxww: 0.5
+    - xxwxwx: 0
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - vwxvww: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glam Glitter F - Bumped Specular (Earth)
+  m_Shader: {fileID: 4800000, guid: 3292fac0edd439a438dc597a2147e454, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 47ecfbe37dd031544b7bdaaf271a9f08, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_5140:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vvxxww:
+        m_Texture: {fileID: 2800000, guid: 813502127469c9f499d819a641ca0ca8, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwwvvx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwxwww:
+        m_Texture: {fileID: 2800000, guid: 560c2dac3de07054380a26fbe275218c, type: 3}
+        m_Scale: {x: 8, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - wvvxxv:
+        m_Texture: {fileID: 2800000, guid: a91b19e85a71953469b4ecddec650214, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wxxwww:
+        m_Texture: {fileID: 2800000, guid: ea878978741d72b498e4dc825a97688c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cubemapblur05: 0
+    - _node_9683: 0
+    - vvxwwx: 0.03
+    - vwwxwx: 5
+    - vxvvvw: 1.5
+    - vxwwww: 1.3
+    - wvvxxw: 4
+    - wvwvww: 0.2
+    - wvwwxv: 1
+    - wxxxvv: 1.5
+    - wxxxww: 1
+    - xvwvwx: 0.2
+    - xxwxww: 0.5
+    - xxwxwx: 1
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - vwxvww: {r: 1, g: 1, b: 1, a: 1}

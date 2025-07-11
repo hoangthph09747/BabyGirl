@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glam Glitter B - Rough Textured (Moon)
+  m_Shader: {fileID: 4800000, guid: 5cba8b0fc2d595f46b516223a84eff7f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseRGB:
+        m_Texture: {fileID: 2800000, guid: 1c317e81f2d02be42a4f1d2159003a4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Glittermap:
+        m_Texture: {fileID: 2800000, guid: 30ae4c49467547b41b7d12bcb3f003f6, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 84a9299645166ac4cab639ac0288289d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 2800000, guid: d4f37436ae27b9541a0d2e3ccbdb8eb6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Reflectioncubemap:
+        m_Texture: {fileID: 8900000, guid: 34ad3ef734f884a46972f448cbed41bb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Specularglitter:
+        m_Texture: {fileID: 2800000, guid: 4d3291be61ac4ba46ac780f54532aada, type: 3}
+        m_Scale: {x: 4, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - vvxxww:
+        m_Texture: {fileID: 2800000, guid: 3cc6dba71d600e443b92b97c4bad326f, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwxwww:
+        m_Texture: {fileID: 2800000, guid: c8f3ca86720351e4384645823b07b0bd, type: 3}
+        m_Scale: {x: 4, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - wvvxxv:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Fakelight: 0.05
+    - _Glittercontrast13: 1.4
+    - _Glitterpower: 4.7
+    - _Glitterymaskdotsscale: 1.5
+    - _Glitteryspeed01: 0.6
+    - _Maskadjust0515: 1.2
+    - _MasktransparencyDebug: 1
+    - _Reflectioncubemappower: 0.376
+    - _RotationSpeed: 0
+    - _Shininess: 0.211
+    - _Specularcontrast13: 1
+    - _Specularpower05: 1.05
+    - vvxwwx: 0.05
+    - vwwxwx: 4.7
+    - vxvvvw: 1
+    - vxwwww: 1.4
+    - wvvxxw: 0.63
+    - wvwvww: 0.2
+    - wvwwxv: 1.5
+    - wxxxvv: 1
+    - xvwvwx: 1
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _Glittercolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Maincolor: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - vwxvww: {r: 1, g: 1, b: 1, a: 1}

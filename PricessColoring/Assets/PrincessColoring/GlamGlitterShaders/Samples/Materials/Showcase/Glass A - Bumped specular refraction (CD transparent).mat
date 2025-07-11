@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glass A - Bumped specular refraction (CD transparent)
+  m_Shader: {fileID: 4800000, guid: 935a89b00ee237e4eb5963d6f9cd964b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 0f9be6ab89d53c84ea450aea8030408f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: e50e180ed9ac3134fa3cb3b29cc76b7f, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: acc890529cc0828469aeda50186cf4ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 2800000, guid: ffd23007d6b5fc54eaf2efdf0c53ed3d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Refraction:
+        m_Texture: {fileID: 2800000, guid: 869c0f088a1ec5440bece75e6748d4e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionNMap:
+        m_Texture: {fileID: 2800000, guid: e48ffde7540ddc745a7dd04629d43655, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Refractionnormalmap:
+        m_Texture: {fileID: 2800000, guid: ffd23007d6b5fc54eaf2efdf0c53ed3d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: acc890529cc0828469aeda50186cf4ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_7777:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha01: 0
+    - _AlphaPower: 1
+    - _BumpAmt: 0
+    - _Cubemapblur: 1
+    - _Cubemapblur05: 1
+    - _Cubemapopaque01: 0.5
+    - _Cubemappower01: 1
+    - _Cubemaptransparent01: 1.2
+    - _Cutoff: 0.5
+    - _Decalalpha01: 1
+    - _Decaltransparency01: 1
+    - _Fresnel: 0
+    - _FresnelPower: 0.66875
+    - _Glassopacity01: 0
+    - _Glasstransparency01: 0.347
+    - _Gloss01: 0.4
+    - _Parallax: 0.02
+    - _RefractionIntensity: 0.008928572
+    - _Refractionintensity: 0.5
+    - _Shininess: 0.021184
+    - _Specular010: 1
+    - _Texturetransparency01: 1
+    - _Transwarp01: 1
+    - _node_1141: 3.92
+    - _node_1796: 1
+    - _node_5237: 1
+    - _node_5662: 0
+    - _node_6258: 1
+    - _threshold: 0.5
+    - _thresholdInt: 0
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _Glasscolor: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _ReflectColor: {r: 0.46323532, g: 0.46323532, b: 0.46323532, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _node_7382: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - _node_9476: {r: 0.5, g: 0.5, b: 0.5, a: 1}

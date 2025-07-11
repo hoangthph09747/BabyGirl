@@ -1,0 +1,57 @@
+Spaventacorvi Glam Glitter Shaders v2.0.1
+
+# Update
+- UnityScript updated to C#
+
+
+Spaventacorvi Glam Glitter Shaders v2.0
+
+# Features
+- Added Prismatic Shader.
+- Added Holographic Shader.
+- Added Palette Cycling Shader.
+- Added sample models: CD and card.
+- Added a lot of textures and sample materials.
+
+# Bug fixes
+- Fixed 5.3+ compatibility.
+
+Please note:
+- Manual not ready yet.
+- Mobile version not ready yet.
+
+
+Spaventacorvi Glam Glitter Shaders v1.2
+
+# Features
+- Added the mobile version.
+
+# Documentation
+- Mobile mask instructions.
+
+
+
+Spaventacorvi Glam Glitter Shaders v1.1
+
+# Internal use only, not released.
+
+
+
+Spaventacorvi Glam Glitter Shaders v1.0.1
+
+# Features
+- Added a sample material
+
+# Bug fixes
+- Fixed a bug that prevent lightmap baking of other objects in the scene.
+- Standard Assets folders have been moved under GGS folder to include them in the package.
+
+# Documentation
+- Some translation corrections.
+- Added links and some image.
+
+
+
+Spaventacorvi Glam Glitter Shaders v1.0
+
+- First release

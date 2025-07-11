@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pal cyc B - Specular (Unity logo cube)
+  m_Shader: {fileID: 4800000, guid: 7908be474038c684d9e6b53fcd475a2f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseRGB:
+        m_Texture: {fileID: 2800000, guid: 5ba89e8f4ddba8a429cca4df64a29356, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: 7556ebff9a4190f4f82568f2299cce4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cyclingpattern:
+        m_Texture: {fileID: 2800000, guid: 6a86462139eb2934aaf2e253165b6477, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: c1668ce4daf7b0c4f9260e59bc62deb7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Palette:
+        m_Texture: {fileID: 2800000, guid: c74a900c4085ed34d9385d56ab897249, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Reflectioncubemap:
+        m_Texture: {fileID: 8900000, guid: 34ad3ef734f884a46972f448cbed41bb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_3259:
+        m_Texture: {fileID: 2800000, guid: 8d17bae6bb4b4d145b74f21792b2851e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_6038:
+        m_Texture: {fileID: 2800000, guid: 39da09fa05e2dce4eb6ac0acc9238596, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_6218:
+        m_Texture: {fileID: 2800000, guid: 8d17bae6bb4b4d145b74f21792b2851e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_7189:
+        m_Texture: {fileID: 2800000, guid: c15d471456625634ea1beb2ab7cb7710, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_9377:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_9555:
+        m_Texture: {fileID: 2800000, guid: 32362ea55469fce45816c907a9683dc9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vvxxww:
+        m_Texture: {fileID: 2800000, guid: c74a900c4085ed34d9385d56ab897249, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwwxwx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wvvxxv:
+        m_Texture: {fileID: 2800000, guid: 39698dc72d811ad4caaf2c8a1a2cb9f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - xvwvwx:
+        m_Texture: {fileID: 2800000, guid: c1668ce4daf7b0c4f9260e59bc62deb7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - xvxwww:
+        m_Texture: {fileID: 2800000, guid: 6a86462139eb2934aaf2e253165b6477, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cubemappower: 0
+    - _Cutoff: 0.5
+    - _Cyclingspeed: 0.2
+    - _Desaturate: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionScaleUI: 0
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Palettecyclingspeed11: 0.1
+    - _Palettecyclingspeed33: -0.01
+    - _Palettepower12: 1
+    - _Palettestratification: 1
+    - _Parallax: 0.02
+    - _Power: 1
+    - _Power12: 0.86
+    - _Reflectioncubemappower: 0
+    - _Shininess: 0
+    - _Specular: 0
+    - _Speed: 0.2
+    - _SrcBlend: 1
+    - _Step: 16
+    - _Stratification: 1.44
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _node_1610: 0.33
+    - _node_4025: 0
+    - _node_4414: 3
+    - _node_6079: 0.3
+    - _node_6855: 1
+    - _node_912: 2
+    - _node_9256: 1
+    - _node_9402: 0
+    - vwvxwv: 1
+    - vwxvww: 1
+    - vxwwww: 0
+    - wvwwxv: 0.1
+    - wwvxvx: 1
+    - xwvwvw: 0
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _node_8310: {r: 1, g: 0, b: 0, a: 1}

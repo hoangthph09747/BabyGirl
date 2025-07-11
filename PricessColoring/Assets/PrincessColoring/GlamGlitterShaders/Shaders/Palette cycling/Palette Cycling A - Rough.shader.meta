@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 6ff72528effaacc419c0c732a708add3
+timeCreated: 1456311623
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - vvxxww: {fileID: 2800000, guid: 4f86233a08e3d344ca14ab4452fbd6e1, type: 3}
+  - xvwvwx: {fileID: 2800000, guid: 408cab5f33a18a04d8b84c9110482c40, type: 3}
+  - xvxwww: {fileID: 2800000, guid: 60a7ecf24dee39b4697881b270bf12e7, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

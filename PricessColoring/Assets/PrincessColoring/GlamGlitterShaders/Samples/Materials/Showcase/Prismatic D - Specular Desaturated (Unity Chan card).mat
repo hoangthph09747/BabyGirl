@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Prismatic D - Specular Desaturated (Unity Chan card)
+  m_Shader: {fileID: 4800000, guid: cd53603d7abce6b459730f63c2b29729, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9afc3dfe390d7b94090358297b09ac54, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vvxwwx:
+        m_Texture: {fileID: 2800000, guid: a2d11265b11b79344ab50ec4144dbbd3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vxwvxx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vxwwww:
+        m_Texture: {fileID: 2800000, guid: 2771fb89f22cdcf4ea318bc32583d6a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wwvxvx:
+        m_Texture: {fileID: 2800000, guid: 18d7048dffb45bf4099f6041d5ba760e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wxxwxw:
+        m_Texture: {fileID: 2800000, guid: 39698dc72d811ad4caaf2c8a1a2cb9f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - vvxxvv: 1
+    - vvxxww: 0
+    - vxvvvw: 3
+    - vxxxwx: 2
+    - wwxxvv: 0
+    - wxvxxw: 1
+    - wxwxxv: 4
+    - wxxwww: 0
+    - wxxxvv: 40
+    - wxxxvw: 3
+    - wxxxww: 0.5
+    - xvwvwx: 3.5
+    - xvxwww: 20
+    - xwxvww: 0.743
+    - xxvvwv: 0.6
+    - xxwvxx: 1
+    - xxwxww: 1
+    m_Colors:
+    - _Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    - vwwvvx: {r: 1, g: 1, b: 1, a: 1}

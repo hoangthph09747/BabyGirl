@@ -1,0 +1,2 @@
+At the moment the mobile version is not ready yet.
+Most of the shaders are already compatible with mobile platforms but an optimized version will come soon.

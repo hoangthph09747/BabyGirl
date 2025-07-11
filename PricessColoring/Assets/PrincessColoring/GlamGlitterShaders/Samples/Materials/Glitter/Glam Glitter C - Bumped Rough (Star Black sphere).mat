@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glam Glitter C - Bumped Rough (Star Black sphere)
+  m_Shader: {fileID: 4800000, guid: d74301e2800a37a46a3303baf7fd2343, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseRGB:
+        m_Texture: {fileID: 2800000, guid: 92193a86004de564caa1ba45bdd96195, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Glittermap:
+        m_Texture: {fileID: 2800000, guid: 969773f20831f1047a12d5a56c27a270, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 6054f720fce671b449f3e99a4c064fc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 2800000, guid: 39698dc72d811ad4caaf2c8a1a2cb9f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Reflectioncubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Specularglitter:
+        m_Texture: {fileID: 2800000, guid: 4c5e062feb4f75147953d822a919322a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vvxxww:
+        m_Texture: {fileID: 2800000, guid: 30ae4c49467547b41b7d12bcb3f003f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwxwww:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wvvxxv:
+        m_Texture: {fileID: 2800000, guid: 6054f720fce671b449f3e99a4c064fc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wxxwww:
+        m_Texture: {fileID: 2800000, guid: 39698dc72d811ad4caaf2c8a1a2cb9f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Fakelight: 0.02
+    - _Glittercontrast13: 1.74
+    - _Glitterpower: 10
+    - _Glitterymaskdotsscale: 1.2
+    - _Glitteryspeed01: 1
+    - _Maskadjust0515: 1.5
+    - _MasktransparencyDebug: 1
+    - _Reflectioncubemappower: 0
+    - _Shininess: 0.118
+    - _Specularcontrast13: 1
+    - _Specularpower05: 0.9
+    - vvxwwx: 0.02
+    - vwwxwx: 10
+    - vxvvvw: 0.9
+    - vxwwww: 1.75
+    - wvvxxw: 1.2
+    - wvwvww: 0.12
+    - wvwwxv: 1
+    - wxxxvv: 1
+    - xvwvwx: 1
+    m_Colors:
+    - _Color: {r: 0.08823532, g: 0.08823532, b: 0.08823532, a: 1}
+    - _Glittercolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Maincolor: {r: 0.08823532, g: 0.08823532, b: 0.08823532, a: 1}
+    - vwxvww: {r: 1, g: 1, b: 1, a: 1}

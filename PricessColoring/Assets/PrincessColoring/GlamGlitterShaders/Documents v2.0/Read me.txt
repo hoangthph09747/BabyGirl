@@ -1,0 +1,8 @@
+Please don't redistribuite or share this package, thanks.
+
+In this release there is not a camera in the scenes to avoid compatibility problems.
+If you want you can add a First Person Controller, or similar, from Unity Standard Asset.
+
+The manual is not ready yet, it will be available soon with a link in the official forum discussion at this link: 
+http://forum.unity3d.com/threads/glam-glitter-shaders-the-shader-never-seen-before.264213/
+Although there is not a manual yet, the use of the shaders is simple and intuitive.

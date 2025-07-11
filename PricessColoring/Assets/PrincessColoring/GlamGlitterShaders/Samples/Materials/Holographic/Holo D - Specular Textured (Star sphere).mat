@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Holo D - Specular Textured (Star sphere)
+  m_Shader: {fileID: 4800000, guid: ac48f99c128d9ad49a6402e7b7b31097, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 7ef1fc6af3ea0ed40bbcc35969d8d393, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwwvvx:
+        m_Texture: {fileID: 8900000, guid: 231521de99c71894d8af63955e84c014, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vwwxwx:
+        m_Texture: {fileID: 2800000, guid: adde2ec18cf13054b971bdb8bcea50ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - vxvvvw:
+        m_Texture: {fileID: 2800000, guid: 408cab5f33a18a04d8b84c9110482c40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - wvwvww:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - xvwvwx:
+        m_Texture: {fileID: 2800000, guid: 5eba56bc256b83e48be14062de39af57, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - vwwvxw: 0.5
+    - vwxvww: 1
+    - vxxxwx: 1
+    - wvvxxv: 0.7
+    - wvvxxw: 0
+    - wvwwxv: 1
+    - wwvxvx: 0.2
+    - wxvxxw: 1
+    - wxxxvv: 0
+    - wxxxvw: 1
+    - xvxwww: 0.3
+    - xxwxww: 0.1
+    m_Colors:
+    - _Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 1}
+    - vvxxww: {r: 1, g: 1, b: 1, a: 1}
