@@ -87,35 +87,8 @@ public class PopupViewPicturePrincessColoring : MonoBehaviour
     {
         SoundManager_BabyGirl.Instance.PlayOneShot("Sounds/UI/Button");
         buttonSave.transform.DOScale(Vector3.zero, 0.15f);
-        SaveToGallery((Texture2D)screenshot.texture);
+      //  SaveToGallery((Texture2D)screenshot.texture);
     }    
 
-    void SaveToGallery(Texture2D texture2D)
-    {
-        string dateTime = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-       // string name = string.Format(_canvasController.PageConfig.name + ".png", Application.productName, dateTime);
-        string fileName = "PrincessColoring_" + dateTime;
-        if (NativeGallery.CheckPermission(NativeGallery.PermissionType.Write, NativeGallery.MediaType.Image) == NativeGallery.Permission.Granted)
-        {
-            NativeGallery.SaveImageToGallery(texture2D, NameMinigame.PrincessColoring.ToString() + "_Girl", fileName, (success, path) =>
-            //Debug.Log("Saved success !"));
-            PopupManager.Instance.ShowToat("Saved Gallery"));
-        }
-        else
-        {
-            NativeGallery.RequestPermission(NativeGallery.PermissionType.Write, NativeGallery.MediaType.Image);
-            if (NativeGallery.CheckPermission(NativeGallery.PermissionType.Write, NativeGallery.MediaType.Image) != NativeGallery.Permission.Granted)
-            {
-                Debug.Log("OnPopupAllowPermission");
-            }
-            else
-            {
-                NativeGallery.SaveImageToGallery(texture2D, NameMinigame.PrincessColoring.ToString() + "_Girl", fileName, (success, path) =>
-                //Debug.Log("Saved success !"));
-                PopupManager.Instance.ShowToat("Saved Gallery"));
-            }
-            // OnPopupAllowPermission();
-        }
-
-    }
+   
 }
