@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using PaintCraft.Tools;
 using System.Collections.Generic;
 using PaintCraft.Utils;
@@ -54,13 +54,35 @@ namespace PaintCraft.Tools.Filters.MaterialFilter{
 					//	}							
 					//}
 
-					if (mat.HasTexture("_TileTex"))
+					//if (mat.HasTexture("_TileTex"))
+					if (mat.HasProperty("_TileTex") )
 						mat.SetTexture("_TileTex", brushLineContext.LineConfig.Texture);
 
-					if (point.Value.Status == PointStatus.ReadyToApply){                                                
-                        Graphics.DrawMesh(mesh, pointPosition, Quaternion.Euler(0,0, point.Value.Rotation), mat, 
-                            brushLineContext.Canvas.BrushLayerId, brushLineContext.Canvas.CanvasCameraController.Camera);                       
-						point.Value.Status = PointStatus.CopiedToCanvas;                                 
+					if (point.Value.Status == PointStatus.ReadyToApply){
+                        /*   Graphics.DrawMesh(mesh, pointPosition, Quaternion.Euler(0,0, point.Value.Rotation), mat, 
+                               brushLineContext.Canvas.BrushLayerId, brushLineContext.Canvas.CanvasCameraController.Camera);  */
+                        // Tạo Matrix4x4 từ position, rotation và scale
+                        Matrix4x4 matrix = Matrix4x4.TRS(
+                            pointPosition,
+                            Quaternion.Euler(0, 0, point.Value.Rotation),
+                            Vector3.one // scale = 1 nếu không có scale riêng
+                        );
+
+                        // MaterialPropertyBlock rỗng (nếu không dùng properties riêng)
+                        MaterialPropertyBlock mpb = null;
+
+                        // Gọi DrawMesh mới
+                        Graphics.DrawMesh(
+                            mesh,
+                            matrix,
+                            mat,
+                            brushLineContext.Canvas.BrushLayerId,
+                            brushLineContext.Canvas.CanvasCameraController.Camera,
+                            0,      // submeshIndex = 0
+                            mpb     // MaterialPropertyBlock (null nếu không cần)
+                        );
+
+                        point.Value.Status = PointStatus.CopiedToCanvas;                                 
                         usedMeshes.Enqueue(mesh);
 					} else if (point.Value.Status == PointStatus.Temporary){                                                						
                         Graphics.DrawMesh(mesh, pointPosition, Quaternion.Euler(0,0, point.Value.Rotation), mat, 

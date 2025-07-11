@@ -170,9 +170,9 @@ namespace PaintCraft.Controllers
 # if UNITY_EDITOR
 				tmpTexture2D.Reinitialize((int)RenderTextureSize.x, (int)RenderTextureSize.y);
 #else
-				tmpTexture2D.Reinitialize((int)RenderTextureSize.x, (int)RenderTextureSize.y);
+				tmpTexture2D.Resize((int)RenderTextureSize.x, (int)RenderTextureSize.y);
 #endif
-				tmpTexture2D.Apply();
+                tmpTexture2D.Apply();
             }
 
 

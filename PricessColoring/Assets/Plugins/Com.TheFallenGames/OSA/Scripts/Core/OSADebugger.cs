@@ -2,6 +2,7 @@
 using frame8.Logic.Misc.Other.Extensions;
 using System;
 using System.Collections;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -180,17 +181,30 @@ namespace Com.TheFallenGames.OSA.Core
 
 			Type t = GetBaseType();
 
-			//foreach (var m in t.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public))
-			//	if (m.Name.ToLower().Contains("compute"))
-			//	Debug.Log(m);
+            //foreach (var m in t.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public))
+            //	if (m.Name.ToLower().Contains("compute"))
+            //	Debug.Log(m);
 
-			var mi = t.GetMethod(
+
+            Type[] paramTypes = DotNETCoreCompat.ConvertAllToArray(parameters, p => p.GetType());
+
+            var mi = t.GetMethod(methodName, BINDING_FLAGS);
+            if (mi == null || !mi.GetParameters().Select(p => p.ParameterType).SequenceEqual(paramTypes))
+            {
+                // Nếu overload không tồn tại, tự lọc
+                mi = t.GetMethods(BINDING_FLAGS)
+                      .FirstOrDefault(m => m.Name == methodName &&
+                                           m.GetParameters().Select(p => p.ParameterType).SequenceEqual(paramTypes));
+            }
+
+
+            /*var mi = t.GetMethod(
 				methodName,
 				BINDING_FLAGS,
 				null,
 				DotNETCoreCompat.ConvertAllToArray(parameters, p => p.GetType()),
 				null
-				);
+				);*/
 			mi.Invoke(_AdapterImpl, parameters);
 		}
 
