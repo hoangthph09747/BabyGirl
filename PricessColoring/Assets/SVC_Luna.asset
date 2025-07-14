@@ -397,7 +397,7 @@ MonoBehaviour:
     keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 464
+  version: 537
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -4165,9 +4165,9 @@ MonoBehaviour:
   _sceneLightData:
     PointLightCount: 0
     SpotLightCount: 0
-    DirectionalLightCount: 0
-    LightmapOn: 0
-    DirlightmapCombined: 0
+    DirectionalLightCount: 10
+    LightmapOn: 1
+    DirlightmapCombined: 1
     DirectionalCookieExists: 0
     PointCookieExists: 0
     SpotCookieExists: 0

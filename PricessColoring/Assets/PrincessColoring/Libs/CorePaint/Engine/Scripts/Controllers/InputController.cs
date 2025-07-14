@@ -44,7 +44,7 @@ namespace PaintCraft.Controllers
         {
             //if (GameManager.instance.typePen == TypePen.Stamp)
             //    return;
-            Debug.Log("Touch Began");
+           // Debug.Log("Touch Began");
             if (EventSystem.current == null)
             {
                 Debug.LogError("you have to add event system to the scene. e.g. from Unity UI");

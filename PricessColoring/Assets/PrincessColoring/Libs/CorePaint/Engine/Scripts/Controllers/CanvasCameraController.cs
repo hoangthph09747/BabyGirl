@@ -67,6 +67,7 @@ namespace PaintCraft.Controllers
                 Camera.targetTexture = canvasCtrl.BackLayerController.RenderTexture;
             }
             Initialized = true;
+			//Debug.Log("CanvasCameraController initialized with Camera: ");
         }
 
 		public void SetNewSize()

@@ -189,11 +189,12 @@ namespace PaintCraft.Controllers
 			if (BackLayerController == null)
 			{
 				BackLayerController = GOUtil.CreateGameObject<BackLayerController>("BackLayer", gameObject, BackLayerOffset);
-				BackLayerController.Init(this);
-				//BackLayerController.gameObject.layer = 0;
-
-				//ngocdu set layer backlayer
-				if (typePen == TypePen.Glow)
+				
+                BackLayerController.Init(this);
+                //BackLayerController.gameObject.layer = 0;
+                BackLayerController.LogState();
+                //ngocdu set layer backlayer
+                if (typePen == TypePen.Glow)
 				{
 					//BackLayerController.gameObject.layer = layerGlow;
 				}
@@ -246,7 +247,8 @@ namespace PaintCraft.Controllers
 			if (CanvasCameraController.Initialized == false)
 			{
 				CanvasCameraController.Init(this);
-			}
+				//Debug.Log("CanvasCameraController initialized");
+            }
 			else
 			{
 				CanvasCameraController.SetNewSize();

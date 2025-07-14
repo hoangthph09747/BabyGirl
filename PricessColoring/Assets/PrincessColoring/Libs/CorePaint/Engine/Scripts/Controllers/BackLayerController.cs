@@ -26,7 +26,20 @@ namespace PaintCraft.Controllers
 			this.canvas = canvas;
 			UpdateMeshSize();
 		}
-
+        public void LogState()
+        {
+            Debug.Log("=== BackLayerController State ===");
+            Debug.Log($"RenderTexture (property): {RenderTexture}");
+            Debug.Log($"canvas: {canvas}");
+            Debug.Log($"tex: {tex}");
+            Debug.Log($"maskTexture: {maskTexture}");
+            Debug.Log($"texture2D: {texture2D}");
+            Debug.Log($"renderTexture (field): {renderTexture}");
+            Debug.Log($"beginStartGiltter: {beginStartGiltter}");
+            Debug.Log($"layerNormal: {layerNormal}");
+            Debug.Log($"layerGiltter: {layerGiltter}");
+            Debug.Log("=================================");
+        }
         //void UpdateMeshSize()
         //{
         //	MeshFilter mf = GOUtil.CreateComponentIfNoExists<MeshFilter>(gameObject);
@@ -64,7 +77,7 @@ namespace PaintCraft.Controllers
 
             //string shaderName = canvas.DefaultBGColor.a == 1.0 ? "Unlit/Texture" : "Unlit/Transparent";
             //ngocdu
-       /*     string shaderName = canvas.DefaultBGColor.a == 1.0 ? "MK/Glow/Selective/Transparent/Diffuse" : "Unlit/Transparent";
+          string shaderName = canvas.DefaultBGColor.a == 1.0 ? "MK/Glow/Selective/Transparent/Diffuse" : "Unlit/Transparent";
 
             //ngocdu
            if (canvas.typePen == TypePen.Giltter)
@@ -87,12 +100,17 @@ namespace PaintCraft.Controllers
                 //{
                 //    shaderName = "Unlit/DIY";
                 //}    
-            }*/
+            }
+#if UNITY_EDITOR || UNITY_ANDROID
+
+            mr.material = new Material(Shader.Find(shaderName));
+#else
 
             mr.material = new Material(Shader.Find("Unlit/Transparent"));
-            RenderTexture = TextureUtil.SetupRenderTextureOnMaterial(mr.material, canvas.RenderTextureSize.x, canvas.RenderTextureSize.y);  
-
-           /* if (canvas.typePen == TypePen.Giltter )
+#endif
+            RenderTexture = TextureUtil.SetupRenderTextureOnMaterial(mr.material, canvas.RenderTextureSize.x, canvas.RenderTextureSize.y);
+#if UNITY_EDITOR || UNITY_ANDROID
+            if (canvas.typePen == TypePen.Giltter )
             {
                 //------------------giltter-----------------
                 ////Spaventacorvi/Glitter/ 
@@ -128,7 +146,7 @@ namespace PaintCraft.Controllers
 
                 ShowGiltterTexture();
             }
-*/
+#endif
             //if (LoadSceneManager.Instance?.nameMinigame == NameMinigame.DIY)
             //    mr.material.SetTexture("_MaskTex", DIY.GameManager_DIY.Instance.maskTex);
 

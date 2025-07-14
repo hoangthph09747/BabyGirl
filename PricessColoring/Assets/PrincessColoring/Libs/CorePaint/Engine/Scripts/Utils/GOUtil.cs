@@ -12,7 +12,8 @@ namespace PaintCraft.Utils{
 		}
 
 		public static T CreateGameObject<T>(string name, GameObject parent, float zOffset) where T:Component{
-			return CreateGameObject<T>(name, parent, new Vector3(0.0f,0.0f,zOffset));
+			//Debug.Log($"Creating GameObject of type {typeof(T).Name} with name '{name}' under parent '{parent.name}' at zOffset {zOffset}");
+            return CreateGameObject<T>(name, parent, new Vector3(0.0f,0.0f,zOffset));
         }
 
 		public static T CreateGameObject<T>(string name, GameObject parent) where T:Component{
